@@ -47,6 +47,14 @@
             while(index2<row['length']){     // 0~9 0~8 0~6
             z = document.createElement('kbd')
             z.textContent = row[index2]     /* 第一行的第0到9 第二行的第0到8 第三行的第0到6个分别作为z中的内容*/
+            buttonX = document.createElement('button')   //在kbd中添加button按钮
+            buttonX.textContent = '编辑'       //按钮的文本内容为‘’
+            buttonX.id = row[index2]
+            buttonX.onclick = function(xzkjcnxlkcjlk){  //添加点击事件
+                console.log(xzkjcnxlkcjlk['target']['id'])   //打印按钮所对应的键位
+                prompt('给我一个网址') //弹出一个提示用户输入的对话框
+            }
+            z.appendChild(buttonX)  
             div1.appendChild(z)
             index2 = index2 + 1
             }          
