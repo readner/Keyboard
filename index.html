@@ -54,9 +54,10 @@
         }
 
         document.onkeypress = function(xzkjcnxlkcjlk){
-            console.log('我发现你输入了一个字')
-            console.log('你按键输入的所有信息是')
-            console.log(xzkjcnxlkcjlk)
+           key = xzkjcnxlkcjlk['key']             // q w e 拿到用户按键
+           website = hash[key]                   //得到按键对应网址
+           //  location.href = 'http://' + website   把当前地址变成新的网址地址
+          window.open('http://' + website, '_blank')   //在新窗口打开网址
         }
     </script>
 </body>
