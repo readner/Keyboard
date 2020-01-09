@@ -36,7 +36,7 @@
             's':'sohu.com',
             'z':'zhuhu.com',
         }
-
+                //遍历keys  生成kbd
         index = 0
         while(index < keys['length']){ //0 1 2
             div1 = document.createElement('div');
@@ -51,6 +51,12 @@
             index2 = index2 + 1
             }          
             index = index + 1
+        }
+
+        document.onkeypress = function(xzkjcnxlkcjlk){
+            console.log('我发现你输入了一个字')
+            console.log('你按键输入的所有信息是')
+            console.log(xzkjcnxlkcjlk)
         }
     </script>
 </body>
